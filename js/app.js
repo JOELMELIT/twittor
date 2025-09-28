@@ -13,10 +13,8 @@ if( navigator.serviceWorker ) {
     if( url.includes('localhost') ){
         swLocation = '/sw.js';
     }
-    navigator.serviceWorker.register( swLocation )
-        .catch( error => {
-            console.log('Error en el sw', error );
-        })
+
+    navigator.serviceWorker.register( swLocation );
 };
 
 // Referencias de jQuery

@@ -9,15 +9,15 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 const APP_SHELL = [
  //   '/', // Se debe cachear también el 8080 "/" http://localhost:8080/ o dará error.
     '/index.html',
-    '/css/style.css',
-    '/img/favicon.ico',
-    '/img/avatars/ironman.jpg',
-    '/img/avatars/spiderman.jpg',
-    '/img/avatars/wolverine.jpg',
-    '/img/avatars/thor.jpg',
-    '/img/avatars/hulk.jpg',
-    '/js/app.js',
-    '/js/sw-utils.js'
+    'css/style.css',
+    'img/favicon.ico',
+    'img/avatars/ironman.jpg',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/wolverine.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/hulk.jpg',
+    'js/app.js',
+    'js/sw-utils.js'
 ];
 
 const APP_SHELL_INMUTABLE = [
