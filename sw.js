@@ -7,7 +7,7 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
-    '/', // Se debe cachear también el 8080 "/" http://localhost:8080/ o dará error.
+ //   '/', // Se debe cachear también el 8080 "/" http://localhost:8080/ o dará error.
     '/index.html',
     '/css/style.css',
     '/img/favicon.ico',

@@ -1,8 +1,19 @@
 
 
+var url = window.location.href;
+
+// Esta es la URL donde se encuentra el Service Worker en producción
+var swLocation = '/twittor/sw.js';
+
+
 // Registro del Service Worker
 if( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('./sw.js')
+
+    // Si estamos en localhost, la ruta del sw es diferente
+    if( url.includes('localhost') ){
+        swLocation = '/sw.js';
+    }
+    navigator.serviceWorker.register( swLocation )
         .catch( error => {
             console.log('Error en el sw', error );
         })
