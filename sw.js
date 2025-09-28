@@ -2,13 +2,13 @@
 importScripts('js/sw-utils.js');
 
 
-const STATIC_CACHE = 'static-v2';
+const STATIC_CACHE = 'static-v1';
 const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
  //   '/', // Se debe cachear también el 8080 "/" http://localhost:8080/ o dará error.
-    '/index.html',
+    'index.html',
     'css/style.css',
     'img/favicon.ico',
     'img/avatars/ironman.jpg',
